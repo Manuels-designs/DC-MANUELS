@@ -21,7 +21,7 @@ nav {
 }
 
 nav img {
-  width: 150px;
+  width: 9.375rem;
 }
 
 .nav-links {
@@ -32,21 +32,21 @@ nav img {
 .nav-links ul li{
   list-style: none;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   position: relative;
 }
 
 .nav-links ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 0.8125rem;
 
 }
 
 .nav-links ul li a::after {
   content: '';
   width: 0%;
-  height: 2px;
+  height: 0.125rem;
   background: #f44336;
   display: block;
   margin: auto;
@@ -77,7 +77,7 @@ nav img {
 }
 
 .header-text h1{
-  font-size: 62px;
+  font-size: 60px;
 }
 .header-text h1 a{
   text-decoration:  none;
@@ -93,21 +93,21 @@ nav img {
 }
 
 .header-text p {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .header-text p a {
   display: inline-block;
   border: 1px solid #fff;
-  padding: 12px 34px;
-  margin-top: 20px;
+  padding: 0.75rem 2.125rem;
+  margin-top: 1.25rem;
   background-color: transparent;
   text-decoration:  none;
   color: #f44336;
-  border-radius: 70px;
-  -webkit-border-radius: 70px;
-  -moz-border-radius: 70px;
-  -ms-border-radius: 70px;
-  -o-border-radius: 70px;
+  border-radius: 4.375rem;
+  -webkit-border-radius: 4.375rem;
+  -moz-border-radius: 4.375rem;
+  -ms-border-radius: 4.375rem;
+  -o-border-radius: 4.375rem;
   transition: .2s ease-in;
   -webkit-transition: .2s ease-in;
   -moz-transition: .2s ease-in;
@@ -118,14 +118,52 @@ nav img {
   color: #fff;
   border: 1px solid #f44336;
   background-color: #f44336;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
+  border-radius: 6.25rem;
+  -webkit-border-radius: 6.25rem;
+  -moz-border-radius: 6.25rem;
+  -ms-border-radius: 6.25rem;
+  -o-border-radius: 6.25rem;
 }
 
+nav .fa {
+  display:none;
+}
 
+@media (max-width:700px) {
+  .header-text h1 {
+    font-size:25px;
+  }
+  .nav-links ul li {
+    display:block;
+  }
+
+  .nav-links ul {
+    padding: 1.8rem;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 0.625rem;
+    font-size: 1.375rem;
+    
+  }
+}
 
 
 
